@@ -92,10 +92,6 @@ export default function Home() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
-    //
-    // const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    //     ref.current?.scrollIntoView({ behavior: 'smooth' });
-    // };
 
 
     const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
