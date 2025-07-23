@@ -94,6 +94,7 @@ export default function Home() {
     };
 
 
+
     const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
