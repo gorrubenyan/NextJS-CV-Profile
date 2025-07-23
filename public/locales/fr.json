@@ -1,7 +1,7 @@
 {
   "name": "John Doe",
   "position": "Développeur Frontend",
-  "bio": "Passionné par la création d'excellentes applications web avec Next.js et Tailwind CSS. Je crée des interfaces modernes, responsives et conviviales qui offrent des expériences numériques exceptionnelles.",
+  "bio": "Je suis spécialisé dans la création d'applications web de haute qualité avec Next.js et Tailwind CSS. Je conçois des interfaces modernes, responsives et conviviales, offrant des expériences numériques exceptionnelles.",
 
   "navHero": "Accueil",
   "navAbout": "À propos",
@@ -15,29 +15,29 @@
   "getInTouch": "Entrer en contact",
 
   "aboutTitle": "À propos de moi",
-  "aboutText": "Je suis un développeur web passionné avec un amour pour la création d'expériences utilisateur belles et fonctionnelles. Avec plus de 3 ans d'expérience en développement frontend, je me spécialise dans React, Next.js et les technologies web modernes.",
-  "aboutText2": "Mon parcours dans le développement web a commencé par une curiosité sur le fonctionnement des sites web, et a évolué vers une carrière axée sur la création de solutions numériques qui font la différence. Je crois en l'écriture de code propre et maintenable et à rester à jour avec les dernières tendances de l'industrie.",
+  "aboutText": "Je suis un développeur web avec plus de 3 ans d'expérience en développement frontend, spécialisé dans React, Next.js et les technologies web modernes. Je suis passionné par la création d'expériences utilisateur fonctionnelles et esthétiques.",
+  "aboutText2": "Mon parcours dans le développement web a commencé par une curiosité sur le fonctionnement des sites web, et s'est transformé en une carrière axée sur la conception de solutions numériques ayant un impact réel. Je crois en l'écriture d'un code propre, maintenable et en me tenant à jour avec les dernières tendances de l'industrie.",
   "projectsCompleted": "Projets Réalisés",
   "yearsExperience": "Années d'Expérience",
 
   "skillsTitle": "Compétences Techniques",
 
   "projectsTitle": "Projets Phares",
-  "projectsPortfolio": "Un site web portfolio moderne et responsive construit avec Next.js et Tailwind CSS, avec mode sombre, support multilingue et animations fluides.",
-  "projectsTask": "Une application complète de gestion des tâches avec des mises à jour en temps réel, authentification des utilisateurs et fonctionnalité intuitive de glisser-déposer.",
-  "projectsEcommerce": "Une plateforme de commerce électronique complète avec intégration de paiement, gestion d'inventaire et fonctionnalité moderne de panier d'achat.",
+  "projectsPortfolio": "Un site web portfolio moderne et responsive construit avec Next.js et Tailwind CSS, incluant un mode sombre, un support multilingue et des animations fluides.",
+  "projectsTask": "Une application complète de gestion des tâches avec mises à jour en temps réel, authentification des utilisateurs et fonctionnalité intuitive de glisser-déposer.",
+  "projectsEcommerce": "Une plateforme e-commerce complète avec intégration de paiements, gestion d'inventaire et fonctionnalité avancée de panier d'achat.",
   "code": "Code",
-  "live": "Démo Live",
+  "live": "Démo en Direct",
 
   "workTitle": "Expérience Professionnelle",
-  "workText": "Développé et maintenu des interfaces web modernes en utilisant React, Next.js et Tailwind CSS. Collaboré avec des équipes transfonctionnelles pour livrer des applications web de haute qualité et amélioré les métriques d'expérience utilisateur de 40%.",
+  "workText": "Développement et maintenance d'interfaces web modernes utilisant React, Next.js et Tailwind CSS. Collaboration avec des équipes transversales pour livrer des applications web de haute qualité et amélioration des métriques d'expérience utilisateur de 40%.",
   "present": "Présent",
 
   "educationTitle": "Éducation",
   "educationDegree": "Licence en Informatique",
 
   "contactTitle": "Travaillons Ensemble",
-  "contactText": "Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. N'hésitez pas à me contacter si vous souhaitez collaborer ou simplement dire bonjour !",
+  "contactText": "Je suis toujours à la recherche de nouvelles opportunités et projets passionnants. N'hésitez pas à me contacter si vous souhaitez collaborer ou simplement échanger.",
   "email": "Email",
   "phone": "Téléphone",
   "location": "Localisation"

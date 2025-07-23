@@ -174,9 +174,9 @@ export default function Home() {
                 </div>
             </nav>
 
-            <main className="pt-22">
+            <main className="pt-20">
                 {/* Hero Section */}
-                <section ref={heroRef} className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+                <section ref={heroRef} className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
                     {/* Animated Background */}
                     <div className="absolute inset-0 overflow-hidden">
                         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
