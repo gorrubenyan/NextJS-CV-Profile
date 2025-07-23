@@ -1,0 +1,44 @@
+{
+  "name": "John Doe",
+  "position": "Desarrollador Frontend",
+  "bio": "Apasionado por construir excelentes aplicaciones web con Next.js y Tailwind CSS. Creo interfaces modernas, responsivas y fáciles de usar que ofrecen experiencias digitales excepcionales.",
+
+  "navHero": "Inicio",
+  "navAbout": "Sobre mí",
+  "navSkills": "Habilidades",
+  "navProjects": "Proyectos",
+  "navWork": "Experiencia",
+  "navContact": "Contacto",
+
+  "contactMe": "Contáctame",
+  "downloadCV": "Descargar CV",
+  "getInTouch": "Ponerse en contacto",
+
+  "aboutTitle": "Sobre mí",
+  "aboutText": "Soy un desarrollador web apasionado con amor por crear experiencias de usuario hermosas y funcionales. Con más de 3 años de experiencia en desarrollo frontend, me especializo en React, Next.js y tecnologías web modernas.",
+  "aboutText2": "Mi viaje en el desarrollo web comenzó con curiosidad sobre cómo funcionan los sitios web, y ha evolucionado hacia una carrera enfocada en crear soluciones digitales que marquen la diferencia. Creo en escribir código limpio y mantenible y mantenerme actualizado con las últimas tendencias de la industria.",
+  "projectsCompleted": "Proyectos Completados",
+  "yearsExperience": "Años de Experiencia",
+
+  "skillsTitle": "Habilidades Técnicas",
+
+  "projectsTitle": "Proyectos Destacados",
+  "projectsPortfolio": "Un sitio web de portafolio moderno y responsivo construido con Next.js y Tailwind CSS, con modo oscuro, soporte multiidioma y animaciones suaves.",
+  "projectsTask": "Una aplicación integral de gestión de tareas con actualizaciones en tiempo real, autenticación de usuarios y funcionalidad intuitiva de arrastrar y soltar.",
+  "projectsEcommerce": "Una plataforma de comercio electrónico completa con integración de pagos, gestión de inventario y funcionalidad moderna de carrito de compras.",
+  "code": "Código",
+  "live": "Demo en Vivo",
+
+  "workTitle": "Experiencia Laboral",
+  "workText": "Desarrollé y mantuve interfaces web modernas usando React, Next.js y Tailwind CSS. Colaboré con equipos multifuncionales para entregar aplicaciones web de alta calidad y mejoré las métricas de experiencia del usuario en un 40%.",
+  "present": "Presente",
+
+  "educationTitle": "Educación",
+  "educationDegree": "Licenciatura en Ciencias de la Computación",
+
+  "contactTitle": "Trabajemos Juntos",
+  "contactText": "Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. ¡No dudes en contactarme si quieres colaborar o simplemente saludar!",
+  "email": "Correo",
+  "phone": "Teléfono",
+  "location": "Ubicación"
+}

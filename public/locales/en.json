@@ -1,0 +1,44 @@
+{
+  "name": "John Doe",
+  "position": "Frontend Developer",
+  "bio": "Passionate about building excellent web applications with Next.js and Tailwind CSS. I create modern, responsive, and user-friendly interfaces that deliver exceptional digital experiences.",
+
+  "navHero": "Home",
+  "navAbout": "About",
+  "navSkills": "Skills",
+  "navProjects": "Projects",
+  "navWork": "Experience",
+  "navContact": "Contact",
+
+  "contactMe": "Contact Me",
+  "downloadCV": "Download CV",
+  "getInTouch": "Get In Touch",
+
+  "aboutTitle": "About Me",
+  "aboutText": "I am a passionate web developer with a love for creating beautiful and functional user experiences. With over 3 years of experience in frontend development, I specialize in React, Next.js, and modern web technologies.",
+  "aboutText2": "My journey in web development started with a curiosity about how websites work, and it has evolved into a career focused on crafting digital solutions that make a difference. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends.",
+  "projectsCompleted": "Projects Completed",
+  "yearsExperience": "Years Experience",
+
+  "skillsTitle": "Technical Skills",
+
+  "projectsTitle": "Featured Projects",
+  "projectsPortfolio": "A modern, responsive portfolio website built with Next.js and Tailwind CSS, featuring dark mode, multilingual support, and smooth animations.",
+  "projectsTask": "A comprehensive task management application with real-time updates, user authentication, and intuitive drag-and-drop functionality.",
+  "projectsEcommerce": "A full-featured e-commerce platform with payment integration, inventory management, and modern shopping cart functionality.",
+  "code": "Code",
+  "live": "Live Demo",
+
+  "workTitle": "Work Experience",
+  "workText": "Developed and maintained modern web interfaces using React, Next.js, and Tailwind CSS. Collaborated with cross-functional teams to deliver high-quality web applications and improved user experience metrics by 40%.",
+  "present": "Present",
+
+  "educationTitle": "Education",
+  "educationDegree": "Bachelor of Computer Science",
+
+  "contactTitle": "Let's Work Together",
+  "contactText": "I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello!",
+  "email": "Email",
+  "phone": "Phone",
+  "location": "Location"
+}
