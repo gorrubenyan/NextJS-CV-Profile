@@ -28,7 +28,7 @@ export default function Home() {
         'Full Stack Developer',
         'UI/UX Designer',
         'Problem Solver'
-    ], [lang]);
+    ], [lang, t]);
 
     // Typing animation effect
     useEffect(() => {
@@ -47,7 +47,7 @@ export default function Home() {
         }, 100);
 
         return () => clearInterval(timer);
-    }, [currentRole]);
+    }, [currentRole, roles]);
 
     // Dark mode effect
     useEffect(() => {
@@ -97,7 +97,17 @@ export default function Home() {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
-
+    const getRefBySection = (section: string) => {
+        switch(section) {
+            case 'hero': return heroRef;
+            case 'about': return aboutRef;
+            case 'skills': return skillsRef;
+            case 'projects': return projectsRef;
+            case 'work': return workRef;
+            case 'contact': return contactRef;
+            default: return heroRef;
+        }
+    };
 
     const skills = [
         { name: 'JavaScript', level: 95, color: 'from-yellow-400 to-yellow-600' },
@@ -150,14 +160,7 @@ export default function Home() {
                         {['hero', 'about', 'skills', 'projects', 'work', 'contact'].map((section) => (
                             <button
                                 key={section}
-                                onClick={() => {
-                                    if (section === 'hero') scrollToSection(heroRef);
-                                    else if (section === 'about') scrollToSection(aboutRef);
-                                    else if (section === 'skills') scrollToSection(skillsRef);
-                                    else if (section === 'projects') scrollToSection(projectsRef);
-                                    else if (section === 'work') scrollToSection(workRef);
-                                    else if (section === 'contact') scrollToSection(contactRef);
-                                }}
+                                onClick={() => scrollToSection(getRefBySection(section))}
                                 className={`capitalize transition-colors ${
                                     activeSection === section
                                         ? 'text-blue-600 dark:text-blue-400'
