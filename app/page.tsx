@@ -1,5 +1,5 @@
 'use client';
-import React, {useEffect, useState, useRef, useMemo} from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { getTranslation } from '@/utils/translations';
 import LanguageSelector from '../components/LanguageSelector';
 import ThemeToggle from '../components/ThemeToggle';
@@ -47,7 +47,7 @@ export default function Home() {
         }, 100);
 
         return () => clearInterval(timer);
-    }, [currentRole, roles]);
+    }, [currentRole, roles]); // Added roles to dependency array
 
     // Dark mode effect
     useEffect(() => {
@@ -93,8 +93,6 @@ export default function Home() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-
-
     const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
@@ -136,7 +134,6 @@ export default function Home() {
             live: 'https://yourecommerce.com'
         }
     ];
-
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-all duration-500">
@@ -332,8 +329,8 @@ export default function Home() {
                                         <div className="flex flex-wrap gap-2 mb-4">
                                             {project.tech.map((tech, techIndex) => (
                                                 <span key={techIndex} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                          {tech}
-                        </span>
+                                                    {tech}
+                                                </span>
                                             ))}
                                         </div>
 
