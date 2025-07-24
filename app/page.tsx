@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState, useRef, useMemo } from 'react';
+import React, {useEffect, useState, useRef, useMemo} from 'react';
 import { getTranslation } from '@/utils/translations';
 import LanguageSelector from '../components/LanguageSelector';
 import ThemeToggle from '../components/ThemeToggle';
@@ -47,7 +47,7 @@ export default function Home() {
         }, 100);
 
         return () => clearInterval(timer);
-    }, [currentRole, roles]); // Added roles to dependency array
+    }, [currentRole]);
 
     // Dark mode effect
     useEffect(() => {
@@ -96,6 +96,8 @@ export default function Home() {
     const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
+
+
 
     const skills = [
         { name: 'JavaScript', level: 95, color: 'from-yellow-400 to-yellow-600' },
@@ -148,7 +150,14 @@ export default function Home() {
                         {['hero', 'about', 'skills', 'projects', 'work', 'contact'].map((section) => (
                             <button
                                 key={section}
-                                onClick={() => scrollToSection(eval(`${section}Ref`))}
+                                onClick={() => {
+                                    if (section === 'hero') scrollToSection(heroRef);
+                                    else if (section === 'about') scrollToSection(aboutRef);
+                                    else if (section === 'skills') scrollToSection(skillsRef);
+                                    else if (section === 'projects') scrollToSection(projectsRef);
+                                    else if (section === 'work') scrollToSection(workRef);
+                                    else if (section === 'contact') scrollToSection(contactRef);
+                                }}
                                 className={`capitalize transition-colors ${
                                     activeSection === section
                                         ? 'text-blue-600 dark:text-blue-400'
@@ -329,8 +338,8 @@ export default function Home() {
                                         <div className="flex flex-wrap gap-2 mb-4">
                                             {project.tech.map((tech, techIndex) => (
                                                 <span key={techIndex} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                                                    {tech}
-                                                </span>
+                          {tech}
+                        </span>
                                             ))}
                                         </div>
 
