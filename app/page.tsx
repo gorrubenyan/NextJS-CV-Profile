@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState, useRef } from 'react';
+import React, {useEffect, useState, useRef, useMemo} from 'react';
 import { getTranslation } from '@/utils/translations';
 import LanguageSelector from '../components/LanguageSelector';
 import ThemeToggle from '../components/ThemeToggle';
@@ -23,12 +23,12 @@ export default function Home() {
 
     const t = (key: string) => getTranslation(lang, key);
 
-    const roles = [
+    const roles = useMemo(() => [
         t('position'),
         'Full Stack Developer',
         'UI/UX Designer',
         'Problem Solver'
-    ];
+    ], [lang]);
 
     // Typing animation effect
     useEffect(() => {
@@ -47,7 +47,7 @@ export default function Home() {
         }, 100);
 
         return () => clearInterval(timer);
-    }, [currentRole, lang]);
+    }, [currentRole, roles]);
 
     // Dark mode effect
     useEffect(() => {
@@ -137,8 +137,7 @@ export default function Home() {
         }
     ];
 
-    // @ts-ignore
-    // @ts-ignore
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-all duration-500">
             {/* Navigation */}
