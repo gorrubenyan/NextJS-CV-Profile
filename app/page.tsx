@@ -1,5 +1,6 @@
 'use client';
-import React, {useEffect, useState, useRef, useMemo} from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
+import Image from 'next/image';
 import { getTranslation } from '@/utils/translations';
 import LanguageSelector from '../components/LanguageSelector';
 import ThemeToggle from '../components/ThemeToggle';
@@ -30,23 +31,35 @@ export default function Home() {
         'Problem Solver'
     ], [lang, t]);
 
+    const rolesRef = useRef(roles);
+    const animationRef = useRef<NodeJS.Timeout | null>(null);
+
+    useEffect(() => {
+        rolesRef.current = roles;
+    }, [roles]);
+
     // Typing animation effect
     useEffect(() => {
-        const currentText = roles[currentRole];
+        const currentText = rolesRef.current[currentRole];
         let index = 0;
-        const timer = setInterval(() => {
+
+        if (animationRef.current) clearInterval(animationRef.current);
+
+        animationRef.current = setInterval(() => {
             if (index <= currentText.length) {
                 setTypedText(currentText.slice(0, index));
                 index++;
             } else {
-                clearInterval(timer);
+                if (animationRef.current) clearInterval(animationRef.current);
                 setTimeout(() => {
-                    setCurrentRole((prev) => (prev + 1) % roles.length);
+                    setCurrentRole((prev) => (prev + 1) % rolesRef.current.length);
                 }, 2000);
             }
         }, 100);
 
-        return () => clearInterval(timer);
+        return () => {
+            if (animationRef.current) clearInterval(animationRef.current);
+        };
     }, [currentRole]);
 
     // Dark mode effect
@@ -190,8 +203,10 @@ export default function Home() {
 
                     <div className="text-center z-10 max-w-4xl mx-auto">
                         <div className="relative mb-8">
-                            <img
+                            <Image
                                 src="/avatar.png"
+                                width={160}
+                                height={160}
                                 className="w-40 h-40 rounded-full shadow-2xl mx-auto mb-8 border-4 border-white dark:border-gray-700 hover:scale-105 transition-transform duration-300"
                                 alt="Avatar"
                             />
@@ -282,11 +297,14 @@ export default function Home() {
 
                             <div className="relative">
                                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-lg transform rotate-6"></div>
-                                <img
-                                    src="/about.png"
-                                    alt="About"
-                                    className="relative rounded-lg shadow-xl w-full h-80 object-cover"
-                                />
+                                <div className="relative h-80">
+                                    <Image
+                                        src="/about.png"
+                                        alt="About"
+                                        fill
+                                        className="rounded-lg shadow-xl object-cover"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -341,8 +359,8 @@ export default function Home() {
                                         <div className="flex flex-wrap gap-2 mb-4">
                                             {project.tech.map((tech, techIndex) => (
                                                 <span key={techIndex} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                          {tech}
-                        </span>
+                                                    {tech}
+                                                </span>
                                             ))}
                                         </div>
 
