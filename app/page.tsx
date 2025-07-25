@@ -47,7 +47,7 @@ export default function Home() {
         }, 100);
 
         return () => clearInterval(timer);
-    }, [currentRole, roles]);
+    }, [currentRole]);
 
     // Dark mode effect
     useEffect(() => {
